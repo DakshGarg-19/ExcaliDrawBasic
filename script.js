@@ -149,7 +149,6 @@ window.addEventListener("click", (e) => {
 
   document.body.appendChild(div);
 
-  // Set position to center on click, then remove transform to fix resizing drift
   const rect = div.getBoundingClientRect();
   div.style.left = e.pageX - rect.width / 2 + "px";
   div.style.top = e.pageY - rect.height / 2 + "px";
