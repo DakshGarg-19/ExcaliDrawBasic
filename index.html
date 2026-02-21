@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ExcaliDraw</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="canvas">
+          <div class="tools">
+            <div class="tool" id="pointer">
+              <i class="fa-solid fa-arrow-pointer"></i>
+            </div>
+            <div class="tool" id="move">
+              <i class="fa-solid fa-arrows-up-down-left-right"></i>
+            </div>
+            <div class="tool" id="pen">
+              <i class="fa-solid fa-pen"></i>
+            </div>
+            <div class="tool" id="eraser">
+              <i class="fa-solid fa-eraser"></i>
+            </div>
+            <div class="tool" id="line-vertical">
+              <i class="fa-solid fa-grip-lines"></i>
+            </div>
+            <div class="tool" id="line-horizontal">
+              <i class="fa-solid fa-grip-lines"></i>
+            </div>
+            <div class="tool" id="rectangle">
+              <i class="fa-regular fa-square"></i>
+            </div>
+            <div class="tool" id="circle">
+              <i class="fa-regular fa-circle"></i>
+            </div>
+            <div class="tool" id="arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+            <div class="tool" id="text">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <div class="tool" id="bucket">
+              <i class="fa-solid fa-bucket"></i>
+            </div>
+            <div class="tool" id="undo">
+              <i class="fa-solid fa-undo"></i>
+            </div>
+            <div class="tool" id="redo">
+              <i class="fa-solid fa-redo"></i>
+            </div>
+          </div>
+          <canvas id="canvas"></canvas>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

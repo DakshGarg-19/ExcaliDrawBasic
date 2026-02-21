@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  resize: both;
+  overflow: auto;
+}
+
+.tools {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #e8e8e8;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  z-index: 999;
+}
+
+.tool {
+  cursor: pointer;
+  padding: 0.25rem;
+  font-size: 1rem;
+  color: #444;
+  transition: color 0.2s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.tool:hover {
+  color: #666;
+  background-color: #c5c5c5;
+}
+
+.tool.active {
+  color: #222;
+  background-color: #b3b3b3;
+}
+
+#line-vertical {
+  transform: rotate(90deg);
+}
+
+.vertical {
+  height: 5rem;
+  width: 0.25rem;
+  max-width: 0.25rem;
+  background-color: #222;
+}
+
+.horizontal {
+  height: 0.25rem;
+  max-height: 0.25rem;
+  width: 5rem;
+  background-color: #222;
+}
+
+.pen {
+  height: 1rem;
+  width: 1rem;
+  background-color: #222;
+}
+
+.eraser {
+  height: 4rem;
+  width: 4rem;
+  background-color: white;
+}
+
+.rectangle {
+  height: 5rem;
+  width: 5rem;
+  border: 2px solid #222;
+  border-radius: 0.25rem;
+}
+
+.circle {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 2px solid #222;
+}
+
+.arrow {
+  height: 1rem;
+  width: 1rem;
+  /* background-color: #222; */
+}
+
+.text {
+  min-height: 3rem;
+  min-width: 5rem;
+  border: 2px solid #222;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  font-size: 1rem;
+  font-family: Verdana, sans-serif;
+  font-weight: 600;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+}
